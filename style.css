@@ -1,0 +1,193 @@
+/* CSS for header */
+body{
+    background-color: #ddd;
+}
+    
+header {
+    background-color: #888;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Title {
+    font-size: 3rem;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.navlist {
+    list-style: none;
+    display: flex;
+    border: none;
+}
+
+.navlist li {
+    margin-right: 20px;
+    size: 4rem;
+    color: red;
+}
+
+.navlist li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.navlist:hover{
+    background-color: #2f303158;
+}
+
+.Mobilephone{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.Electronics{
+    margin-bottom: 5px;
+}
+.navlist ul li{
+    color: #007BFF;
+}
+
+.image-gallery{
+    margin-bottom: 5px;
+}
+
+.image-gallery2{
+    margin-bottom: 5px;
+}
+
+.image-gallery4{
+    margin-bottom: 5px;
+}
+.imagegallery5{
+    margin-bottom: 5px;
+}
+/* CSS for footer */
+footer {
+    background-color: #33333361;
+    color: #fff;
+    padding: 2px;
+    text-align: left;
+}
+
+.contact {
+    padding: 3px;
+    flex-direction:column
+}
+
+h1 {
+    color: #333;
+}
+
+/* Specific styles for Contact page */
+.social-wrapper {
+    display: inline-block;
+}
+
+
+
+/* CSS styles for the payment modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: rgba(0, 0, 0, 0.406);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.subscription-form {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.subscription-form h2 {
+    margin-bottom: 15px;
+}
+
+.subscription-form input {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.subscription-form button {
+    padding: 5px 15-px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.subscription-form button:hover {
+    background-color: #0056b3;
+}
+
+#responseMessage {
+    margin-top: 15px;
+    color: rgba(128, 0, 0, 0.731);
+    font-weight: bold;
+}
+
+.image-gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.image-gallery img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#Home-page{
+     background-color: blanchedalmond;
+}
+
+/* Add your CSS styles here */
+.swiper-container {
+    width: 100%;
+    height: 300px; /* Adjust height as needed */
+    margin-bottom: 20px;
+}
+
+.About2 {
+    background-color: #0056b3;
+}
