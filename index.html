@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelz Store </title>
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Preload images using link tags -->
+    <link rel="preload" as="image" href="images/preload.png">
+    <link rel="preload" as="image" href="images/preload2.png">
+    <link rel="preload" as="image" href="images/preload3.png">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="images/logoE.png" alt="Logo" width="80-px" height="80px">
+        <span  class="Title">D.fash E-commerce store</span>
+    </div>
+    <nav>
+        <ul class="navlist">
+            <li><a href="Home.html" id="Home">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="pelumiayodeji06@gmail.com">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main id="Mainsection">
+    
+    <section class="Mobilephone">
+        <div class="productdetails">
+            <h2>Mobile Phones & Gadget</h2>
+            <p>Experience the latest Ios, Android version featuring a powerful A15 Bionic chip and Advanced camera system.</p>
+
+            <div class="image-gallery">
+                <img src="images/phone.png" alt="Iphone14 pro max" width="50px" height="50px">
+                <img src="images/phone2.png" alt="infinix" width="50px" height="50px">
+                <img src="images/phone3.png" alt="Samsung Fold" width="50px" height="50px">
+                <img src="images/phone4.png" alt="Apple tablet" width="50px" height="50px">
+            </div>
+           
+            <select id="select phones">
+                <option value="Iphone" data-image="https://via.placeholder.com/20/20" data-price="$600" data-category="iphone14 pro max">Iphone</option>
+                <option value="Android" data-image="https://via.placeholder.com/20/20" data-price="$250" data-category="Infinix smart2">Android</option>
+                <option value="Samsung" data-image="https://via.placeholder.com/20/20" data-price="$800" data-category="Samsung Fold">Samsung</option>
+                <option value="Tablet" data-image="https://via.placeholder.com/20/20" data-price="12500" data-category="Apple ipad4">Tablet</option>
+            </select>
+
+            <p>Price: $900.00</p>
+            <button onclick="addToCart('Product 1')">Add to Cart</button>
+        </div>
+    </section>
+
+    <section class="Electronics">
+       <div class="productdetails">
+           <h2>Electronics</h2>
+           <p>Explore our wide range of cutting edge electronics, from high definition Tvs to powerful laptops and smart home devices.</p>
+
+           <div class="image-gallery2">
+            <img src="images/laptop.png" alt="laptop" width="50px" height="50px">
+            <img src="images/TV.png" alt="TV set" width="50px" height="50px">
+            <img src="images/headphone.png" alt="Headphone" width="50px" height="50px">
+            <img src="images/sound.png" alt="sound system" width="50px" height="50px">
+        </div>
+          
+           <select id="select items">
+               <option value="Laptop & computers" data-image="https://via.placeholder.com/20/20" data-price="$2000" data-category="Apple laptop">Apple laptop</option>
+               <option value="Tv & Audio " data-image="https://via.placeholder.com/20/20" data-price="$1500" data-category="TV & DVD">TV & DVD</option>
+               <option value="Acessories" data-image="https://via.placeholder.com/20/20" data-price="$800" data-category="Headphone">Headphone</option>
+               <option value="Audio Equipment" data-image="https://via.placeholder.com/20/20" data-price="5000" data-category="sound system">sound system</option>
+           </select>
+
+           
+           <p>Price: $10000.00</p>
+           <button onclick="addToCart('Product 1')">Add to Cart</button>
+           
+           <section class="vehicles">
+           <div class="productdetails3">
+               <h2>vehicles</h2>
+               <p> Browse our selection of top quality vehicles, from sleek sedans to rugged SUVs and powerful trucks, to find your perfect ride.</p>
+
+               <div class="image-gallery4">
+                <img src="images/lexus.png" alt="Lexus" width="50px" height="50px">
+                <img src="images/Toyota.png" alt="Toyota" width="50px" height="50px">
+                <img src="images/BUS.png" alt="Bus" width="50px" height="50px">
+                <img src="images/bike.png" alt="Bike"width="50px" height="50px">
+            </div>
+              
+               <select id="select phones">
+                   <option value="car" data-image="https://via.placeholder.com/20/20" data-price="$20000" data-category="Lexus">Lexus ES350</option>
+                   <option value="Buses" data-image="https://via.placeholder.com/20/20" data-price="$15000" data-category="Nissan">Nissan Nv2000</option>
+                   <option value="  Motorbikes" data-image="https://via.placeholder.com/20/20" data-price="$60000" data-category="Motorcycle">Neq Beach</option>
+                   <option value="Trucks" data-image="https://via.placeholder.com/20/20" data-price="$80000" data-category="Truck">Toyota dyna 200</option>
+               </select>
+
+               
+            <p>Price: $500.00</p>
+            <button onclick="addToCart('Product 1')">Add to Cart</button>
+
+               <section class="Fashion">
+                <!-- Product 1 -->
+               <div class="productdetails2">
+                   <h2>Fashion</h2>
+                   <p>Elevate your styles with our curated collection of trendy clothing, accessories, and footwear, designed to make you look and feel your best.</p>
+
+                   <div class="imagegallery5">
+                    <img src="images/unixes.png" alt="unisex wares" width="50px" height="50px">
+                    <img src="images/bag.png" alt="Bag" width="50px" height="50px">
+                    <img src="images/jewery.png" alt="jewerry" width="50px" height="50px">
+                    <img src="images/shoe.png" alt="Shoe" width="50px" height="50px">
+                </div>
+                  
+                   <select id="select styles">
+                       <option value="Clothing" data-image="https://via.placeholder.com/20/20" data-price="$100" data-category="unisex shirt">Shirt</option>
+                       <option value="Bags" data-image="https://via.placeholder.com/20/20" data-price="$70" data-category="unisex bags">Luggage & Travel Bags</option>
+                       <option value="Jewellery" data-image="https://via.placeholder.com/20/20" data-price="$300" data-category="Unisex jewellery">chains</option>
+                       <option value="Shoes" data-image="https://via.placeholder.com/20/20" data-price="150" data-category="unisex shoes">Shoes</option>
+                   </select>
+
+            <p>Price: $500.00</p>
+            <button onclick="addToCart('Product 1')">Add to Cart</button>
+          
+</main>
+
+    </section>
+    
+    <aside class="cart">
+    <ul id="cart-items"><aside class="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items">
+            
+        </ul>
+        <p>Total Price: <span id="total-price">$500.00</span></p>
+    </aside>
+
+    <div class="review-section">
+        <h2>Product Reviews</h2>
+        <form id="reviewForm">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <select id="reviewType" name="reviewType" required>
+                <option value="" disabled selected>Select Review Type</option>
+                <option value="positive">Positive</option>
+                <option value="negative">Negative</option>
+            </select>
+            <textarea id="comment" name="comment" placeholder="Write your review here..." required></textarea>
+            <button type="submit">Submit Review</button>
+        </form>
+        <div id="reviews">
+            <h3>All Reviews</h3>
+            <div id="reviewList"></div>
+        </div>
+    </div>
+    
+    </ul>
+    <p>Total Price: <span id="total-price">$2000.00</span></p>
+
+    <div class="payment-options">
+        <label for="payment">Select Payment Method:</label>
+        <select id="payment" name="payment">
+            <option value="paypal">PayPal</option>
+            <option value="bitcoin">Bitcoin</option>
+            <option value="bank-transfer">Bank Transfer</option>
+        </select>
+    </div>
+
+    <div class="subscription-form">
+        <h2>Subscribe to our Newsletter</h2>
+        <form id="subscribeForm">
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+        <p id="responseMessage"></p>
+    </div>
+
+    </div>
+    
+</main>
+
+<footer>
+    <div class="contact">
+        <h1>Contact Us</h1>
+
+      <div class="social-wrapper">
+
+            <p class="h3 social-list-title">Join the Conversation</p>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank">
+                  <i class="fab fa-facebook"></i> 
+              </a>
+              <a href="https://www.twitter.com" target="_blank">
+                  <i class="fab fa-twitter"></i> 
+              </a>
+              <a href="https://www.instagram.com" target="_blank">
+                  <i class="fab fa-instagram"></i> 
+              </a>
+    
+              </div>
+          </div>
+        <div class="privacy">
+            <p>Copyright D.fash store 2024. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
+
+
+ 
+
